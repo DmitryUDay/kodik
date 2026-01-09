@@ -13,8 +13,10 @@ body{
 }
 
 .shapka{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     padding: 5px;
-    top: 5px;
     width: 100%;
     height: 50px;
     margin-right: 15px;
@@ -22,9 +24,77 @@ body{
     gap: 25px;
     align-items: center;
     font-size: 16px;
-    opacity: 0.8;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.7); /* полупрозрачный */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+     border-bottom: 1px solid rgba(215, 215, 215, 0.627);
 }
+
+.shapka img{
+  font-size: 20px;
+}
+
+/* ===== БУРГЕР ===== */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 24px;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+}
+
+/* ===== МОБИЛЬНОЕ МЕНЮ ===== */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -1000px;
+  width: 280px;
+  height: 100vh;
+  background: #fff;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: left 0.3s ease;
+  z-index: 1001;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+/* ===== АКТИВНОЕ СОСТОЯНИЕ ===== */
+.mobile-menu.active {
+  left: 0;
+}
+
+/* ===== ОВЕРЛЕЙ ===== */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
+
 
 .selfs{
     display: flex;
@@ -79,6 +149,7 @@ body{
   display: flex;
   gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -258,6 +329,8 @@ body{
 }
 
 
+
+
 .accordion hr{
     width: 90%;
     margin: 0 auto;
@@ -272,7 +345,8 @@ body{
 }
 
 .help-button {
-    display: inline-flex;
+    align-items: center;
+    display: flex;
     align-items: center;
     padding: 10px 20px;
     background: none;
@@ -283,7 +357,6 @@ body{
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 
@@ -305,6 +378,11 @@ body{
 .price-table td {
   border-left: none; /* убираем ВСЕ вертикальные линии */
   padding: 30px;
+}
+
+
+.table-scroll{
+  width: 100%;
 }
 
 /* Добавляем вертикальную линию справа от 1-го столбца */
@@ -424,4 +502,86 @@ footer{
   padding: 5px;
   border-radius: 20px;
   background-color: #f0f0f0;
+}
+
+
+.consult-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eaeaea;
+  border-radius: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* кнопка */
+.help-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 768px) {
+  .selfs {
+    display: none;
+  }
+
+  .stolb1, .stolb2{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .shapka img{
+    height: 40px;
+    width: auto;
+  }
+  
+  .cardPriceSite{
+    width: 100%;
+  }
+  
+  .help-button{
+    display: block;
+    justify-content: center;
+  }
+
+  .wrapper{
+    flex-wrap: wrap;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .consult-box {
+    justify-content: center; /* центрируем строки */
+    text-align: center;
+  }
+
+  .help-button {
+    margin: 0 auto; /* центр по горизонтали */
+  }
+
+  .table-scroll {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
+  }
+
+  .price-table {
+    min-width: 900px; /* ВАЖНО: чтобы появилась прокрутка */
+  }
+  .rdr{
+    width: 100%;
+  }
+  footer{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
 }
