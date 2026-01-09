@@ -1,0 +1,60 @@
+.custom-list {
+  list-style: none; /* убираем стандартные маркеры */
+  padding-left: 0;
+  max-width: 300px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 30px; /* место под иконку */
+  margin-bottom: 10px;
+}
+
+/* Крестик */
+.custom-list li.cross::before {
+  content: "✗"; /* Unicode крестика */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(165, 165, 165);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Галочка */
+.custom-list li.check::before {
+  content: "✔"; /* Unicode галочки */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(165, 165, 165);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.custom-list li.check1 {
+  position: relative; /* чтобы ::before позиционировался относительно li */
+  padding-left: 35px; /* отступ слева под кружок */
+}
+
+.custom-list li.check1::before {
+  content: "✔"; /* Unicode галочки */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 24px;       /* фиксированный размер круга */
+  height: 24px;
+  line-height: 24px; /* выравнивание галочки по вертикали */
+  text-align: center; /* выравнивание галочки по горизонтали */
+  box-sizing: border-box;
+}

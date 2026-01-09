@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: white;
+}
+
+.shapka{
+    padding: 5px;
+    top: 5px;
+    width: 100%;
+    height: 50px;
+    margin-right: 15px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-size: 16px;
+    opacity: 0.8;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.selfs{
+    display: flex;
+    gap: 20px;
+}
+
+.selfs a{
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 0.2s;
+}
+
+.shapka a:hover{
+    background-color: rgb(237, 237, 237);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.bannerPrices{
+    border-radius: 40px;
+    padding: 30px;
+    background-color: rgb(237, 237, 237);
+}
+
+
+.advenc{
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.advenc p{
+    font-size: 15px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+.connect{
+    border-radius: 15px;
+    background-color: #00a4b2;
+    color: white;
+    padding: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+
+}
+
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  min-height: 400px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  max-width: 80%;
+}
+
+.card img {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: auto;
+  height: 200px;
+}
+
+
+
+
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  /* background: #f9f9f9; */
+  /* border-top: 2px solid #ddd; */
+  /* border-bottom: 2px solid #ddd; */
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-track p{
+  text-align: center;
+}
+
+.carousel img {
+  height: 400px;
+  margin: 0 20px;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  from {
+  transform: translateX(0);
+  }
+  to {
+  transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+.cardRandom {
+  border-radius: 20px;
+  background-color: #D9E7FF;
+  width: 100%; /* Лучше 100%, чтобы занимало всю ширину родителя */
+  padding: 40px; /* Отступы внутри карточки */
+  box-sizing: border-box; /* Чтобы padding учитывался внутри ширины */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Немного тени */
+}
+
+.cardRandom img{
+  width: 50%;
+}
+
+.stolb1, .stolb2 .cardRandom {
+  margin-bottom: 30px;
+}
+
+
+.stolb1, .stolb2{
+  width: 50%;
+}
+
+
+
+
+.accordion {
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin: 20px auto;
+  width: 90%;
+  border-radius: 20px;
+}
+
+.accordion-item {
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border: none;
+  background: none;
+}
+
+.accordion-item input[type="checkbox"] {
+  display: none;
+}
+
+.accordion-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 20px 24px;
+  user-select: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.accordion-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* или cover, если нужно */
+  display: block;
+}
+
+.accordion-text {
+  flex-grow: 1;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.accordion-arrow {
+  width: 20px;
+  height: 20px;
+  border-left: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  transform: rotate(-405deg);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 24px;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-item input[type="checkbox"]:checked ~ .accordion-content {
+  max-height: 250px;
+  padding: 16px 24px;
+}
+
+
+.accordion-item input[type="checkbox"]:checked + .accordion-label .accordion-arrow {
+  transform: rotate(45deg);
+}
+
+
+.accordion hr{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+.cardPriceSite{
+  padding: 2px;
+  width: 30%;
+  border-radius: 20px;
+}
+
+.help-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: none;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+  .price-table {
+    border-collapse: collapse;
+    width: 100%; /* полная ширина */
+    margin: 20px auto;
+    font-size: 1.2rem; /* крупнее шрифт */
+    color: #333;
+  }
+
+  /* Ячейки с вертикальными линиями между ними */
+.price-table th,
+.price-table td {
+  border-left: none; /* убираем ВСЕ вертикальные линии */
+  padding: 30px;
+}
+
+/* Добавляем вертикальную линию справа от 1-го столбца */
+.price-table th:nth-child(1),
+.price-table td:nth-child(1) {
+  border-right: 1px solid #ccc; /* или 1px, можно толще */
+}
+
+  /* У первой ячейки в каждой строке убираем левый бордер (чтобы не было двойных линий слева таблицы) */
+  .price-table th:first-child,
+  .price-table td:first-child {
+    border-left: none;
+  }
+
+
+  /* Вертикальная линия справа у последнего заголовка */
+  .price-table thead th:last-child {
+    border-right: none; /* чтобы не было двойной правой линии */
+  }
+
+  /* Первый столбец - услуги, светлый фон */
+  .price-table tbody td:first-child {
+    font-weight: 600;
+    text-align: left;
+  }
+
+  /* Остальные столбцы — белый фон и текст по центру */
+  .price-table tbody td:not(:first-child) {
+    text-align: center;
+  }
+
+  /* Нижняя линия (подчеркивание) у всех строк кроме последней */
+  .price-table tbody tr {
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* Убираем нижнюю границу у последней строки */
+  .price-table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  /* Убираем внешние бордеры таблицы слева, справа, сверху и снизу */
+  .price-table {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .no-borders th {
+  border: none !important;
+}
+
+
+
+.black-pill {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 20px 60px ;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  user-select: none;
+  margin: 0 auto; /* центрируем внутри ячейки */
+}
+
+td{
+  font-weight:bolder;
+}
+
+
+.rdr{
+  width: 20%;
+  border: 1px solid black;
+  padding: 60px;
+  border-radius: 20px;
+}
+
+.rdr h1,p{
+  color: rgb(0, 0, 0);
+}
+
+.rdr h1{
+  font-size: 60px;
+}
+
+.rdr img{
+  width: 30%;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+
+
+footer a{
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+footer{
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.bp{
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.btn a{
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+}
