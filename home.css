@@ -13,6 +13,7 @@ body, html{
     max-width: 100%;
     /* overflow-x: hidden; */
     background-color: white;
+    scroll-behavior: smooth;
 }
 
 .shapka{
@@ -179,6 +180,13 @@ body, html{
   padding: 20px;
   padding-right: 25px;
   padding-left: 25px;
+}
+
+.vib{
+  background-color: #00a4b2;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
 }
 
 .sasConnect:hover{
@@ -524,7 +532,8 @@ td{
 
 .rdr img{
   width: 30%;
-  background-color: #ccc;
+  padding: 10px;
+  background-color: #ededed;
   border-radius: 50%;
 }
 
@@ -534,6 +543,11 @@ footer a{
   display: block;
   margin: 5px 0;
   text-decoration: none;
+  transition: all 0.3;
+}
+
+footer a:hover{
+  color: #5279A6;
 }
 
 footer{
@@ -606,12 +620,19 @@ footer{
   gap: 16px;
 }
 
+
+
 /* кнопка */
 .help-button {
   display: flex;
   align-items: center;
   gap: 8px;
   text-decoration: none;
+  transition: all 0.3s;
+}
+
+.help-button:hover{
+  background-color: #d3d3d3;
 }
 
 
