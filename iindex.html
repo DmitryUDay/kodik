@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodarium | Профессиональная разработка сайтов</title>
+    <link rel="stylesheet" href="hhome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="mamka/icons.png">
+</head>
+<body>
+    <!-- Header (оставить как в исходнике, только добавить логотип) -->
+    <div class="shapka">
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo-container">
+            <img src="mamka/exampleLogo.png" alt="Kodarium">
+            <span>Kodarium</span>
+        </div>
+        <div class="selfs">
+            <a href="index.html" class="havee">Разработка сайтов</a>
+            <a href="UCloudHost.html">Облако UCloud</a>
+            <a href="https://dmitryuday.github.io/ABartaj/index.html">Проекты и сервисы</a>
+            <a href="">Мастер настроек</a>
+            <a href="https://t.me/Kodarium">Помощь</a>
+        </div>
+        <a href="#pricing">
+            <div class="vib">Выбрать тариф</div>
+        </a>
+    </div>
+
+    <!-- Mobile Menu (оставить как в исходнике) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <img src="mamka/exampleLogo.png" alt="" width="90%">
+        <a href="index.html" class="havePhone">>>> Разработка сайтов</a>
+        <a href="UCloudHost.html">Облако UCloud</a>
+        <a href="https://dmitryuday.github.io/ABartaj/index.html">Проекты и сервисы</a>
+        <a href="">Мастер настроек</a>
+        <a href="https://t.me/Kodarium">Помощь</a>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">★ Лучшее качество 2024</div>
+                <h1>Профессиональные сайты для вашего бизнеса</h1>
+                <p>Создаем лендинги, сайты-визитки и интернет-магазины, которые приносят клиентов. Быстро, качественно, с гарантией поддержки.</p>
+                
+                <div class="hero-features">
+                    <span>Разработка за 10 дней</span>
+                    <span>Техподдержка 24/7</span>
+                    <span>Адаптивный дизайн</span>
+                    <span>SEO-оптимизация</span>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#pricing" class="cta-button">
+                        <i class="fas fa-rocket"></i> Выбрать тариф
+                    </a>
+                    <a href="#portfolio" class="secondary-button">
+                        <i class="fas fa-eye"></i> Посмотреть работы
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="mamka/aska.jpg" alt="Пример сайта">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2 class="section-title">Что мы создаем</h2>
+        <p class="section-subtitle">Специализируемся на сайтах, которые реально работают и приносят прибыль</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="mamka/1card.png" alt="Лендинг">
+                </div>
+                <h3>Лендинг пейдж</h3>
+                <p>Одностраничный сайт для презентации продукта или услуги. Идеально подходит для запуска рекламных кампаний.</p>
+                <ul class="service-features">
+                    <li>Адаптивный дизайн</li>
+                    <li>Интеграция с CRM</li>
+                    <li>Форма заявок</li>
+                    <li>SEO-базовая оптимизация</li>
+                </ul>
+                <div class="service-price">от 3 000₽</div>
+                <a href="#contact" class="cta-button" style="width: 100%; text-align: center;">Заказать</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="mamka/2card.png" alt="Сайт-визитка">
+                </div>
+                <h3>Сайт-визитка</h3>
+                <p>Корпоративный сайт для малого бизнеса. Несколько страниц с информацией о компании и услугах.</p>
+                <ul class="service-features">
+                    <li>До 5 страниц</li>
+                    <li>Контакты и карта</li>
+                    <li>Галерея работ</li>
+                    <li>Блог (опционально)</li>
+                </ul>
+                <div class="service-price">от 5 000₽</div>
+                <a href="#contact" class="cta-button" style="width: 100%; text-align: center;">Заказать</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="mamka/3card.png" alt="Интернет-магазин">
+                </div>
+                <h3>Интернет-магазин</h3>
+                <p>Небольшой онлайн-магазин для продажи товаров. Удобное управление каталогом и заказами.</p>
+                <ul class="service-features">
+                    <li>Каталог товаров</li>
+                    <li>Корзина покупок</li>
+                    <li>Оплата онлайн</li>
+                    <li>Панель администратора</li>
+                </ul>
+                <div class="service-price">от 12 000₽</div>
+                <a href="#contact" class="cta-button" style="width: 100%; text-align: center;">Заказать</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <h2 class="section-title">Наши работы</h2>
+        <p class="section-subtitle">Более 50 успешных проектов для клиентов из разных сфер бизнеса</p>
+        
+        <div class="portfolio-grid">
+            <!-- Портфолио элементы -->
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <h2 class="section-title">Как мы работаем</h2>
+        <p class="section-subtitle">Прозрачный процесс от заявки до запуска</p>
+        
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>Обсуждение проекта</h3>
+                <p>Анализируем ваши цели, целевую аудиторию и составляем техническое задание</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>Дизайн и прототип</h3>
+                <p>Создаем уникальный дизайн, адаптивный под все устройства и утверждаем с вами</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>Разработка</h3>
+                <p>Программируем функционал сайта, интегрируем необходимые сервисы и системы</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <h3>Запуск и поддержка</h3>
+                <p>Помогаем с размещением на хостинге, настройкой и обеспечиваем техническую поддержку</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <h2 class="section-title">Выберите свой тариф</h2>
+        <p class="section-subtitle">Гибкие условия для бизнеса любого масштаба</p>
+        
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Базовый</h3>
+                    <div class="price">3 000₽</div>
+                    <p>Сайт-визитка или лендинг</p>
+                </div>
+                <ul class="pricing-features">
+                    <li>Адаптивный дизайн</li>
+                    <li>1-2 страницы</li>
+                    <li>Базовая SEO-оптимизация</li>
+                    <li>Поддержка 10 дней</li>
+                    <li>Размещение на хостинге</li>
+                </ul>
+                <a href="#contact" class="cta-button" style="width: 100%; text-align: center;">Выбрать тариф</a>
+            </div>
+            
+            <div class="pricing-card popular">
+                <div class="pricing-header">
+                    <h3>Бизнес</h3>
+                    <div class="price">6 000₽</div>
+                    <p>Сайт под ключ</p>
+                </div>
+                <ul class="pricing-features">
+                    <li>Уникальный дизайн</li>
+                    <li>До 5 страниц</li>
+                    <li>Полная SEO-оптимизация</li>
+                    <li>Поддержка 20 дней</li>
+                    <li>Интеграция с соцсетями</li>
+                    <li>Форма обратной связи</li>
+                </ul>
+                <a href="#contact" class="cta-button" style="width: 100%; text-align: center; background: #0066cc;">Выбрать тариф</a>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Премиум</h3>
+                    <div class="price">12 000₽</div>
+                    <p>Интернет-магазин</p>
+                </div>
+                <ul class="pricing-features">
+                    <li>Эксклюзивный дизайн</li>
+                    <li>Интернет-магазин</li>
+                    <li>Админ-панель</li>
+                    <li>Поддержка 30 дней</li>
+                    <li>Онлайн-оплата</li>
+                    <li>СМС-уведомления</li>
+                </ul>
+                <a href="#contact" class="cta-button" style="width: 100%; text-align: center;">Выбрать тариф</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2 class="section-title">Частые вопросы</h2>
+        <p class="section-subtitle">Ответы на самые популярные вопросы о разработке сайтов</p>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">Сколько времени занимает разработка?</div>
+                <div class="faq-answer">Лендинг или сайт-визитка — 5-10 дней. Интернет-магазин — 10-20 дней. Сроки зависят от сложности и скорости согласований.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Что нужно для начала работы?</div>
+                <div class="faq-answer">Только ваше желание и примеры сайтов, которые вам нравятся. Мы поможем с текстами, фотографиями и всем остальным.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Вы делаете адаптивные сайты?</div>
+                <div class="faq-answer">Да, все наши сайты идеально отображаются на компьютерах, планшетах и смартфонах.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Готовы запустить свой сайт?</h2>
+        <p>Свяжитесь с нами для бесплатной консультации. Обсудим ваш проект и подберем оптимальное решение.</p>
+        <div class="cta-buttons">
+            <a href="https://t.me/Kodarium" class="cta-button white">
+                <i class="fab fa-telegram"></i> Написать в Telegram
+            </a>
+            <a href="tel:+79999999999" class="cta-button transparent">
+                <i class="fas fa-phone"></i> Позвонить нам
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer (оставить как в исходнике, но в новом стиле) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Услуги</h3>
+                <a href="index.html">Разработка сайтов</a>
+                <a href="UCloudHost.html">Облако UCloud</a>
+                <a href="">Техническая поддержка</a>
+                <a href="">Доработка сайтов</a>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Компания</h3>
+                <a href="">О нас</a>
+                <a href="">Портфолио</a>
+                <a href="">Отзывы</a>
+                <a href="">Контакты</a>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Помощь</h3>
+                <a href="https://t.me/Kodarium">Техподдержка</a>
+                <a href="">База знаний</a>
+                <a href="">FAQ</a>
+                <a href="">Документация</a>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <p style="color: #cbd5e0; margin-bottom: 15px;">Email: info@kodarium.ru</p>
+                <p style="color: #cbd5e0; margin-bottom: 25px;">Telegram: @Kodarium</p>
+                <div class="social-links">
+                    <a href="https://vk.ru/kodarium" class="social-link">
+                        <img src="mamka/social/vkIcon.png" alt="VK">
+                    </a>
+                    <a href="https://t.me/saite_na_zakaz" class="social-link">
+                        <img src="mamka/social/tgIcon.png" alt="Telegram">
+                    </a>
+                    <a href="https://github.com/DmitryUDay" class="social-link">
+                        <img src="mamka/social/githubIcon.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">© 2024 Kodarium. Все права защищены.</div>
+            <div style="color: #a0aec0;">Проект UDay Development</div>
+        </div>
+    </footer>
+
+    <!-- Floating buttons -->
+    <button id="scrollToTop" title="Наверх"><i class="fas fa-chevron-up"></i></button>
+    <button id="chatButton" title="Чат поддержки"><i class="fas fa-comment-dots"></i></button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+
+        burger.onclick = () => {
+            burger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        };
+
+        overlay.onclick = () => {
+            burger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        };
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+                
+                // Close other items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Scroll to top
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Chat button
+        const chatBtn = document.getElementById('chatButton');
+        chatBtn.classList.add('pulse');
+        
+        chatBtn.addEventListener('click', () => {
+            window.open('https://t.me/Kodarium', '_blank');
+            chatBtn.classList.remove('pulse');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    burger.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    overlay.classList.remove('active');
+                    
+                    // Smooth scroll
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.service-card, .process-step, .pricing-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

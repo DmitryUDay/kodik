@@ -34,9 +34,86 @@ body, html{
      border-bottom: 1px solid rgba(215, 215, 215, 0.627);
 }
 
-.shapka img{
-  font-size: 20px;
+/* Активная ссылка (Разработка сайтов) */
+.havee {
+    background: #0066cc;
+    color: white !important;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.2);
+    transition: all 0.3s ease;
 }
+
+
+.filling {
+    color: #4a5568;
+    position: relative;
+    overflow: hidden;
+}
+
+.filling:hover {
+    background-color: rgba(0, 102, 204, 0.08);
+    color: #0066cc;
+}
+
+/* Плавная линия снизу */
+.filling::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #0066cc, #00a4b2);
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    opacity: 0;
+}
+
+.filling:hover::after {
+    width: 70%;
+    opacity: 1;
+}
+
+/* Вариант 4: Двойная линия */
+.filling.double-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #0066cc, #00a4b2);
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.filling.double-line::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: rgba(0, 102, 204, 0.3);
+    border-radius: 1px;
+    transform: translateX(-50%);
+    transition: width 0.5s ease;
+    transition-delay: 0.1s;
+}
+
+.filling.double-line:hover::after {
+    width: 80%;
+}
+
+.filling.double-line:hover::before {
+    width: 60%;
+}
+
+
+
 
 /* ===== БУРГЕР ===== */
 .burger {
@@ -125,28 +202,144 @@ body, html{
     transition: all 0.2s;
 }
 
-.shapka a:hover{
-    background-color: rgb(237, 237, 237);
-    color: black;
-    border-radius: 20px;
-    padding: 10px;
+
+.preimuch{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
 }
 
+.preimuch span {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
-
-.havee{
-    background-color: rgb(0, 0, 0);
-    color: white;
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+    width: 100%;
     border-radius: 20px;
-    padding: 10px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.preimuch span::before {
+    content: "✓";
+    color: #00a4b2;
+    font-weight: bold;
 }
 
 
 .bannerPrices{
-    border-radius: 40px;
-    padding: 30px;
-    background-color: #F1F2F7;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding: 30px;
+    background-color: #F6F8FB;
+    flex-wrap: wrap;
 }
+
+.bannerPrices img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+
+}
+
+.godCach{
+  background: #0066cc;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 5px;
+}
+
+
+.blockSites{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.Blockcontent{
+  width: 100%;
+}
+
+
+.blockSites {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Добавил - теперь на телефонах скидывается */
+}
+
+.Blockcontent {
+    flex: 1;
+    min-width: 300px; /* Минимальная ширина перед переносом */
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* Кнопки */
+.buttonPrice1, .buttonPrice2 {
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.buttonPrice1{
+  background-color: #00a4b2;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.buttonPrice2{
+  color: #00a4b2;
+  border: 2px solid #00a4b2;
+  padding: 18px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.buttonPrice2:hover{
+  background-color: #00a4b2;
+  color: white;
+  padding: 18px;
+  border-radius: 10px;
+}
+.buttonPrice1:hover{
+  background-color: #00737e;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+
 
 
 .advenc{
@@ -187,6 +380,10 @@ body, html{
   padding: 10px;
   border-radius: 20px;
   color: white;
+  transition: all 0.3s;
+}
+.vib:hover{
+  background-color: #01818d;
 }
 
 .sasConnect:hover{
@@ -197,48 +394,6 @@ body, html{
   background-color: #01909d;
 }
 
-
-
-.cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card {
-  position: relative;
-  width: 300px;
-  min-height: 400px;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 20px;
-  transition: transform 0.5s ease;
-  cursor: pointer;
-}
-
-.card:hover{
-  transform: translateY(-6px);
-}
-
-
-.card h3 {
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 14px;
-  max-width: 80%;
-  margin-bottom: 10px;
-}
-
-.card img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: auto;
-  height: 200px;
-}
 
 
 
@@ -539,26 +694,38 @@ td{
 
 
 
-footer a{
+.footer a{
   display: block;
   margin: 5px 0;
   text-decoration: none;
-  transition: all 0.3;
+  transition: all 0.4s;
 }
 
-footer a:hover{
-  color: #5279A6;
+.footer a:hover:not(.btn a){
+  transform: translateX(6px);
+  color: #ffffff;
 }
 
 footer{
-  margin: 40px;
-  display: flex;
-  justify-content: space-between;
-
+  background-color: #1A202C;
+  padding: 40px;
 }
 
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer h1{
+  color: white;
+}
+.footer a{
+  color: #CBD5E0;
+}
+
+
 .bp{
-  background-color: #f0f0f0;
+  background-color: #464d5f;
   padding: 20px;
   border-radius: 20px;
 }
@@ -567,7 +734,7 @@ footer{
   width: 110px;
   height: 60px;
   border-radius: 20px;
-  background-color: #f0f0f0;
+  background-color: #464d5f;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -637,6 +804,54 @@ footer{
 
 
 
+.cardWhat {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.cardWhat h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cardWhat p {
+  margin-bottom: 15px;
+}
+
+.cardWhat ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Убираем стандартные точки */
+}
+
+.cardWhat li {
+  display: flex;        /* Делаем flex-контейнер */
+  align-items: center;  /* Выравниваем по вертикали */
+  margin-bottom: 12px;
+  line-height: 1.5;
+  color: #444;
+  min-height: 24px;     /* Гарантируем минимальную высоту */
+}
+
+.cardWhat li:last-child {
+  margin-bottom: 0;
+}
+
+.cardWhat li:before {
+  content: "•";
+  color: #0066cc;
+  font-size: 24px;
+  line-height: 1;       /* Убираем влияние на высоту строки */
+  margin-right: 12px;   /* Отступ между точкой и текстом */
+  flex-shrink: 0;       /* Точка не сжимается */
+  align-self: center;   /* Дополнительное выравнивание */
+}
+
+
 /* ===== АДАПТИВ ===== */
 @media (max-width: 768px) {
   .selfs {
@@ -690,9 +905,13 @@ footer{
   .rdr{
     width: 100%;
   }
-  footer{
+  .footer{
     flex-wrap: wrap;
     gap: 20px;
+  }
+
+  .blockSites{
+    flex-wrap: wrap;
   }
 
   .accordion {
@@ -713,4 +932,94 @@ footer{
     animation: scroll 15s linear infinite;
   }
 
+  .hero-image{
+    display: none;
+  }
+  .phoneMargin{
+    margin: 20px 50px 0 20px;
+  }
+  .cardRandom img{
+    width: 100%;
+  }
+  
+
+}
+
+
+
+
+
+#scrollToTop {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #a9a9a9c4;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#scrollToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#scrollToTop:hover {
+    background: #dbdbdda4;
+    transform: scale(1.1);
+}
+        
+/* Кнопка чата */
+#chatButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #00a4b2;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chatButton:hover {
+    transform: scale(1.1);
+}
+
+/* Пульсация для привлечения внимания */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 #00a4b2; }
+    70% { box-shadow: 0 0 0 10px rgba(255, 64, 129, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 64, 129, 0); }
+}
+
+#chatButton.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Контент для демонстрации */
+.content {
+    height: 2000px;
+    padding: 50px;
+    background: linear-gradient(white, #f0f8ff);
+}
+
+h1 {
+    margin-top: 100px;
 }
