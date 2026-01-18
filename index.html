@@ -6,8 +6,29 @@
     <title>Kodarium</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="helper.css">
-    <link rel="icon" type="image/png" href="mamka/icons.png">
+    <link rel="stylesheet" href="mandal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Основные favicon для браузеров -->
+    <link rel="icon" type="image/png" sizes="32x32" href="mamka/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="mamka/favicon_io/favicon-16x16.png">
+
+    <!-- Для Apple устройств (iPhone, iPad) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="mamka/favicon_io/apple-touch-icon.png">
+
+    <!-- Для Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="mamka/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="mamka/favicon_io/android-chrome-512x512.png">
+
+    <!-- Старый формат .ico для совместимости -->
+    <link rel="shortcut icon" href="mamka/favicon_io/favicon.ico" type="image/x-icon">
+
+    <!-- Манифест для PWA (опционально, но лучше добавить) -->
+    <link rel="manifest" href="mamka/favicon_io/site.webmanifest">
+
+    <!-- Цвет темы браузера (опционально) -->
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
     <div class="shapka">
@@ -44,15 +65,10 @@
     <div class="overlay" id="overlay"></div>
 
     <div class="bannerPrices">
-        
-        <button class="godCach">★ Лучшее качество 2026</button>
-
-
-
         <div class="blockSites">
             <div class="Blockcontent">
                 <h1 style="font-size: 30px;">Профессиональные сайты для вашего бизнеса</h1>
-                <p style="font-size: 20px; color: #3b3b3b;">Создаем лендинги, сайты-визитки и интернет-магазины, которые приносят клиентов. Быстро, качественно, с гарантией поддержки.</p>
+                <p style="font-size: 20px; color: #3b3b3b;">Создаем лендинги, сайты-визитки и интернет-магазины, многостраничные сайты, которые приносят клиентов. Быстро, качественно, с гарантией поддержки.</p>
                 <br>
                 <div class="preimuch">
                     <span>Разработка за 10 дней</span>
@@ -91,30 +107,36 @@
     <div class="carousel">
         <div class="carousel-track">
         <div style="width: 100px;"></div>
-        <a href="https://dmitryuday.github.io/UDay/">
+
+        <div>
             <img src="p1.png" alt="UDay">
             <p>UDayDev</p>
-        </a>
-        <a href="https://dmitryuday.github.io/ABartaj/index.html">
+        </div>
+
+        <div>
             <img src="p2.png" alt="ABA">
             <p>ABartaj</p>
-        </a>
-        <a href="">
+        </div>
+
+        <div>
             <img src="p3.png" alt="rugo">
             <p>RuGO</p>
-        </a>
-        <a href="">
+        </div>
+        
+        <div>
             <img src="p4.png" alt="SS">
             <p>Sneaker store</p>
-        </a>
-        <a href="https://dmitryuday.github.io/muzeum4/">
+        </div>
+
+        <div>
             <img src="p5.png" alt="MSHM">
             <p>Музей МБОУСОШ</p>
-        </a>
-        <a href="https://dmitryuday.github.io/MSH4/">
+        </div>
+
+        <div>
             <img src="p6.png" alt="MSH4">
             <p>Школьный сайт</p>
-        </a>
+        </div>
         </div>
     </div>
 
@@ -262,7 +284,7 @@
                         <h1>Базовый</h1>
                         <br>
                         <h1>от 3000₽</h1>
-                        <a href="404.html">
+                        <a href="https://t.me/Kodarium">
                             <div class="sasConnect">Заказать</div>
                         </a>
                     </div>
@@ -283,7 +305,7 @@
                         <h1 style="color: white;">Базовый +</h1>
                         <br>
                         <h1 style="color: white;">от 6000₽</h1>
-                        <a href="404.html">
+                        <a href="https://t.me/Kodarium">
                             <div class="sasConnect">Заказать</div>
                         </a>
                     </div>
@@ -294,7 +316,7 @@
                             <li class="check1">Подключим домен и хостинг</li>
                             <li class="check1">Поддержка сайта 20 дней</li>
                             <li class="check1">Разработка от 7 дней</li>
-                            <li class="check1">Отправка на индексацию (Google, Яндекс)</li>
+                            <li class="check1">Индексация (Google, Яндекс, Bing)</li>
                         </ul>
                     </div>
                 </div>
@@ -348,13 +370,13 @@
                             <th style="text-align: left; font-size: 30px;">Услуги, которые входят в тариф</th>
 
                             <th style="text-align: center; width: 150px;"><div class="black-pill" style="background-color: #EBF3FF; color: black;">Базовый</div></th>
-                            <th style="text-align: center; width: 150px;"><div class="black-pill" >Базовый +</div></th>
+                            <th style="text-align: center; width: 150px;"><div class="black-pill" style="font-size: 25px;">Базовый +</div></th>
                             <th style="text-align: center; width: 150px;"><div class="black-pill" style="background-color: #F2F4F7; color: black;">Премиум</div></th>
                             <th style="text-align: left; font-size: 15px; font-weight:normal;">Цена услуги вне тарифа</th>
                         </tr>
                     </thead>
                         <tr>
-                        <td style="font-weight:normal;">Регистрация доменов .ru/.рф на 1 год</td>
+                        <td style="font-weight:normal;">Продление домена на год</td>
                         <td>Х</td>
                         <td>✔</td>
                         <td>✔</td>
@@ -493,12 +515,12 @@
             </div>
             <div class="rdr">
                 <img src="mamka/love.png" alt="">
-                <h1>> 1000</h1>
+                <h1>> 830</h1>
                 <p>начинающих предпринимателей выбирают Kodarium</p>
             </div>
             <div class="rdr">
                 <img src="mamka/card.png" alt="">
-                <h1>> 7 000</h1>
+                <h1>> 1000</h1>
                 <p>предпринимателей доверили свои сайты Kodarium</p>
             </div>
 
@@ -524,7 +546,7 @@
         
         <div class="cardWhat">
             <h3>Могу ли я самостоятельно вносить изменения в сайт?</h3>
-            <p>Да, если вы владеете навыками базового HTML, то без проблем можете вносить изменения в код. Если же у вас нет навыков или времени, то вы без проблем можете предоставить сайт нам и мы сделаем все так как хостите</p>
+            <p>Да, если вы владеете навыками базового HTML, то без проблем можете вносить изменения в код. Если же у вас нет навыков или времени, то вы без проблем можете предоставить сайт нам и мы сделаем все так как хотите</p>
         </div>
         <div class="cardWhat">
             <h3>будет ли сайт адаптивным под все девайсы?</h3>
@@ -541,29 +563,29 @@
             <div style="justify-content: center;">
                 <h1>Продукты</h1>
                 <a href="UCloudHost.html">Облако</a>
-                <a href="">Сертификаты защиты</a>
-                <a href="https://dmitryuday.github.io/ABartaj/index.html">Сервисы</a>
-                <a href="">Защита от DoS</a>
-                <a href="">Антивирус Machine Sheeld</a>
+                <a id="NF">Бесплатные API</a>
+                <a href="https://dmitryuday.github.io/ABartaj/index.html">ABartaj</a>
+                <a id="NF">Защита от DoS</a>
+                <a id="NF">Антивирус Machine Sheeld</a>
             </div>
 
             <div style="justify-content: center;">
                 <h1>Полезное</h1>
-                <a href="">Стоимость услуг</a>
-                <a href="">Способы оплаты</a>
-                <a href="">Документы(реестр UDay)</a>
-                <a href="">Сообщить о проблеме</a>
+                <a id="NF">Стоимость услуг</a>
+                <a id="NF">Способы оплаты</a>
+                <a id="NF">Документы(реестр UDay)</a>
+                <a href="https://t.me/RUdolphuFeedBack_bot">Сообщить о проблеме</a>
                 <a href="https://dmitryuday.github.io/UDay/">Сайт UDay</a>
             </div>
 
             <div style="justify-content: center;">
                 <h1>Компания</h1>
-                <a href="">О компании</a>
-                <a href="">Контакты</a>
-                <a href="">Новости</a>
-                <a href="">Мероприятия</a>
-                <a href="">Блог</a>
-                <a href="">Отзывы клиентов</a>
+                <a href="about.html">О компании</a>
+                <a id="NF">Контакты</a>
+                <a id="NF">Новости</a>
+                <a id="NF">Мероприятия</a>
+                <a id="NF">Блог</a>
+                <a id="NF">Отзывы клиентов</a>
             </div>
 
 
@@ -599,21 +621,32 @@
         <br>
         <div style="display: flex; justify-content: space-between;">
             <p style="color: #CBD5E0;">© 2026  Kodarium. Все права защищены.</p>
-            <p style="color: #CBD5E0;">Проект UDay Development</p>
+            <a href="https://dmitryuday.github.io/UDay/" style="color: #CBD5E0; text-decoration: underline;">Проект UDay Development</a>
         </div>
 
     </footer>
 
     <button id="scrollToTop" title="Наверх"><i class="fas fa-chevron-up"></i></button>
-    
-    <!-- Кнопка чата -->
+
     <button id="chatButton" title="Открыть чат"><i class="fas fa-comments" style="color: white;"></i></button>
 
 
 
 
 
+    <div id="nfModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-icon">🚫</div>
+            <h2 class="modal-title">Ссылка не активна!</h2>
+            <p class="modal-message">
+                Kodarium заблокировал этот ресурс из-за проблем с его работой.<br>
+                Если вам нужна информация с этой страницы,<br>
+                обратитесь в <a href="https://t.me/Kodarium" style="color: #3498db;">службу поддержки</a>.
 
+            </p>
+            <button class="modal-button" onclick="closeModal()">Понятно</button>
+        </div>
+    </div>
 
 
 
@@ -712,6 +745,65 @@
     </script>
 
 
+
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const nfLinks = document.querySelectorAll('a[id="NF"]');
+    
+    nfLinks.forEach(link => {
+        // Добавляем обработчик клика
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Отменяем стандартное поведение
+            
+            // Если уже кликнули - не повторять анимацию
+            if (this.classList.contains('clicked')) {
+                showModal();
+                return;
+            }
+            
+            // Добавляем класс clicked для запуска анимации
+            this.classList.add('clicked');
+            
+            // Запускаем анимацию
+            this.style.animation = 'none';
+            void this.offsetWidth; // Триггер перезапуска анимации
+            this.style.animation = 'nfRedden 0.4s ease forwards';
+            
+            // Показываем модалку
+            setTimeout(() => {
+                showModal();
+            }, 200);
+        });
+    });
+});
+
+        // Функция показа модального окна
+        function showModal() {
+            const modal = document.getElementById('nfModal');
+            modal.style.display = 'flex';
+            
+            // Закрытие при клике на фон
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
+            
+            // Закрытие на Escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        }
+
+        // Функция закрытия модального окна
+        function closeModal() {
+            const modal = document.getElementById('nfModal');
+            modal.style.display = 'none';
+        }
+    </script>
 
 </body>
 </html>
