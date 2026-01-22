@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="helper.css">
     <link rel="stylesheet" href="mandal.css">
+    <link rel="stylesheet" href="helpModal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Основные favicon для браузеров -->
@@ -43,7 +44,7 @@
             <a href="UCloudHost.html" class="filling">Облако UCloud</a>
             <a href="https://dmitryuday.github.io/ABartaj/index.html" class="filling">Проекты и сервисы</a>
             <a href="" class="filling">Мастер настроек</a>
-            <a href="https://t.me/Kodarium" class="filling">Помощь</a>
+            <a onclick="openContactSphere(); return false;" class="filling">Помощь</a>
         </div>
         <div>
             <a href="#tarifeee">
@@ -59,10 +60,17 @@
         <a href="UCloudHost.html">Облако UCloud</a>
         <a href="https://dmitryuday.github.io/ABartaj/index.html">Проекты и сервисы</a>
         <a href="">Мастер настроек</a>
-        <a href="https://t.me/Kodarium">Помощь</a>
+        <a onclick="openContactSphere(); return false;">Помощь</a>
     </div>
 
     <div class="overlay" id="overlay"></div>
+    <div class="container">
+        <div class="text-container">
+            <span class="base-text">Создаем сайты, которые</span>
+            <span id="changing-text" class="changing-text"></span>
+        </div>
+    </div>
+
 
     <div class="bannerPrices">
         <div class="blockSites">
@@ -101,7 +109,7 @@
     <br>
     <div style="margin: 25px;" id="worder">
         <h1 align="center">Сайты которые мы делали</h1>
-        <p align="center">Уже 500+ клиентов воспользовались услугами Kodarium и заказали страницы для своего бизнеса</p>
+        <p align="center">Уже 350+ клиентов воспользовались услугами Kodarium и заказали страницы для своего бизнеса</p>
     </div>
 
     <div class="carousel">
@@ -153,14 +161,18 @@
 
                 <div class="cardRandom" style="margin-bottom: 30px;">
                     <h1>Поддержка сайта</h1>
-                    <p>Готовы доработать проект в соответствии с вашими пожеланиями: внесем правки в текст, отредактируем старницу или добавим товары</p>
-                    <img src="mamka/supports.png" alt="">
+                    <div class="parrentRandom">
+                        <p>Готовы доработать проект в соответствии с вашими пожеланиями: внесем правки в текст, отредактируем старницу или добавим товары</p>
+                        <img src="mamka/supports.png" alt="">
+                    </div>
                 </div>
                 
                 <div class="cardRandom" style="background-color: #F2F4F7;">
                     <h1>Полезные советы</h1>
-                    <p>В нашем <a href="https://t.me/saite_na_zakaz" style="text-decoration: underline;">тг канале</a> вы найдёте гайды,инструкции и образовательные материалы,чтобы хорошо разобраться в работе сайта и его дизайне.</p>
-                    <img src="mamka\tgChannel.png" alt="">
+                    <div class="parrentRandom">
+                        <p>В нашем <a href="https://t.me/saite_na_zakaz" style="text-decoration: underline;">тг канале</a> вы найдёте гайды,инструкции и образовательные материалы,чтобы хорошо разобраться в работе сайта и его дизайне.</p>
+                        <img src="mamka\tgChannel.png" alt="">
+                    </div>
                 </div>
 
 
@@ -172,19 +184,25 @@
             <div class="stolb2">
                 <div class="cardRandom" style="margin-top: 100px;">
                     <h1>Логотип</h1>
-                    <p>Если у вас еще нет логотипа, мы разработаем для вас два варианта дизайна бесплатно.</p>
-                    <img src="mamka/logoFree.png" alt="">
+                    <div class="parrentRandom">
+                        <p>Если у вас еще нет логотипа, мы разработаем для вас два варианта дизайна бесплатно.</p>
+                        <img src="mamka/logoFree.png" alt="">
+                    </div>
                 </div>
 
                 <div class="cardRandom" style="background-color: #F2F4F7;">
                     <h1>поможем сделать индексацию страницы</h1>
+                    <div class="parrentRandom"></div>
                     <p>Следите за статистикой посещений, популярностью сайта при помощи сервисов Google search console, Yandex Web Master, Bing web master tool</p>
+                    <img src="mamka/indexing.png" alt="">
                 </div>
 
                 <div class="cardRandom">
                     <h1>Поможем с красотой</h1>
-                    <p>Не разбираетесь в дизайне? Не беда! Мы поможем во всём разобраться, сделаем и покажем вам так, чтобы было понятно и красиво.</p>
-                    <img src="mamka/idea.png" alt="">
+                    <div class="parrentRandom">
+                        <p>Не разбираетесь в дизайне? Не беда! Мы поможем во всём разобраться, сделаем и покажем вам так, чтобы было понятно и красиво.</p>
+                        <img src="mamka/idea.png" alt="">
+                    </div>
                 </div>
 
             </div>
@@ -284,7 +302,7 @@
                         <h1>Базовый</h1>
                         <br>
                         <h1>от 3000₽</h1>
-                        <a href="https://t.me/Kodarium">
+                        <a onclick="openContactSphere(); return false;">
                             <div class="sasConnect">Заказать</div>
                         </a>
                     </div>
@@ -305,7 +323,7 @@
                         <h1 style="color: white;">Базовый +</h1>
                         <br>
                         <h1 style="color: white;">от 6000₽</h1>
-                        <a href="https://t.me/Kodarium">
+                        <a onclick="openContactSphere(); return false;">
                             <div class="sasConnect">Заказать</div>
                         </a>
                     </div>
@@ -328,7 +346,7 @@
                         <h1>Премиум</h1>
                         <br>
                         <h1>от 12000₽</h1>
-                        <a href="404.html">
+                        <a onclick="openContactSphere(); return false;">
                             <div class="sasConnect">Заказать</div>
                         </a>
                     </div>
@@ -336,7 +354,7 @@
                     <div style="background-color: white; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; padding: 20px;">
                         <ul class="custom-list">
                         <li class="check">Эксклюзивный дизайн всех страниц</li>
-                            <li class="check">Домен и хостинг на 1 месяц в подарок</li>
+                            <li class="check">подключим домен и хостинг</li>
                             <li class="check">Приоритетная поддержка 30 дней</li>
                             <li class="check">Полная SEO-оптимизация</li>
                             <li class="check">Разработка от 10 дней</li>
@@ -356,7 +374,7 @@
                     <p>Расскажем всё на консультации</p>
                 </div>
 
-                <a href="https://t.me/your_telegram_username" target="_blank" class="help-button">
+                <a onclick="openContactSphere(); return false;" target="_blank" class="help-button">
                     <img src="mamka/what.png" alt="Telegram" width="30px">
                     <p>Консультация</p>
                 </a>
@@ -515,12 +533,12 @@
             </div>
             <div class="rdr">
                 <img src="mamka/love.png" alt="">
-                <h1>> 830</h1>
+                <h1>> 270</h1>
                 <p>начинающих предпринимателей выбирают Kodarium</p>
             </div>
             <div class="rdr">
                 <img src="mamka/card.png" alt="">
-                <h1>> 1000</h1>
+                <h1>> 350</h1>
                 <p>предпринимателей доверили свои сайты Kodarium</p>
             </div>
 
@@ -540,7 +558,7 @@
             <p>Необходимо отдельно доплатить</p>
             <ul>
                 <li>Домен-имя сайта обычно стоит от 200 рублей в год</li>
-                <li>Хостинг-там где сайт живет. Стоимость на 2026 год примерно 300рублей в месяц</li>
+                <li>Хостинг-там где сайт живет. Стоимость на 2026 год примерно 300 рублей в месяц</li>
             </ul>
         </div>
         
@@ -628,7 +646,7 @@
 
     <button id="scrollToTop" title="Наверх"><i class="fas fa-chevron-up"></i></button>
 
-    <button id="chatButton" title="Открыть чат"><i class="fas fa-comments" style="color: white;"></i></button>
+    <button id="chatButton" onclick="openContactSphere(); return false;" target="_blank" title="Открыть чат"><i class="fas fa-comments" style="color: white;"></i></button>
 
 
 
@@ -648,18 +666,32 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<div id="contactSphere" class="glassContainer">
+  <div class="crystalOverlay"></div>
+  <div class="aquaDialog">
+    <button class="crystalClose" id="clClosee">×</button>
+    <h2 class="oceanTitle">Выберите вариант связи</h2>
+    <div class="waveOptions">
+      <a href="https://t.me/Kodarium" target="_blank" class="rippleOption">
+        <i class="fab fa-telegram"></i>
+        <span class="flowText">Telegram</span>
+      </a>
+      <a href="https://vk.ru/kodarium" target="_blank" class="rippleOption">
+        <i class="fab fa-vk"></i>
+        <span class="flowText">VK</span>
+      </a>
+      <a href="https://wa.me/79881892838" target="_blank" class="rippleOption">
+        <i class="fab fa-whatsapp"></i>
+        <span class="flowText">WhatsApp</span>
+      </a>
+      <div class="rippleOption rippleDisabled">
+        <i class="fas fa-robot"></i>
+        <span class="flowText">TG Бот</span>
+        <span class="soonBadge">скоро</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -701,30 +733,8 @@
                 behavior: 'smooth'
             });
         });
-        
-        // Кнопка чата
-        const chatBtn = document.getElementById('chatButton');
-        
-        // Добавить пульсацию при загрузке
-        chatBtn.classList.add('pulse');
-        
-        // Убрать пульсацию при первом клике
-        let pulseStopped = false;
-        
-        chatBtn.addEventListener('click', function() {
-            // ВСТАВЬ СВОЮ ССЫЛКУ НА ЧАТ ЗДЕСЬ!
-            const chatUrl = 'https://t.me/yourusername'; // ЗАМЕНИ на свой Telegram или другой чат
-            
-            // Открыть в новом окне
-            window.open(chatUrl, '_blank');
-            
-            // Остановить пульсацию после первого клика
-            if (!pulseStopped) {
-                chatBtn.classList.remove('pulse');
-                pulseStopped = true;
-            }
-        });
-        
+
+
         // Альтернатива: открыть в этом же окне
         // chatBtn.addEventListener('click', function() {
         //     window.location.href = 'https://t.me/yourusername';
@@ -804,6 +814,176 @@
             modal.style.display = 'none';
         }
     </script>
+
+    <script>
+    const baseText = "Создаем сайты, которые";
+    const words = [
+        "приводят клиентов", 
+        "работают за вас", 
+        "приносят заказы", 
+        "экономят время", 
+        "приносят доход", 
+        "продают даже ночью"
+    ];
+    const element = document.getElementById("changing-text");
+    let wordIndex = 0;
+    let i = 0;
+    let isDeleting = false;
+    
+    function type() {
+        const currentWord = words[wordIndex];
+        
+        if (!isDeleting) {
+            // Печатаем слово
+            element.textContent = currentWord.substring(0, i);
+            // Применяем соответствующий цвет
+            element.className = `changing-text color-${wordIndex}`;
+            i++;
+            
+            if (i > currentWord.length) {
+                // Слово напечатано, ждем 2 секунды и начинаем стирать
+                setTimeout(() => {
+                    isDeleting = true;
+                    type();
+                }, 2000);
+                return;
+            }
+        } else {
+            // Стираем слово
+            element.textContent = currentWord.substring(0, i);
+            i--;
+            
+            if (i < 0) {
+                // Слово стерто, переходим к следующему
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                i = 0;
+                
+                // Ждем немного перед печатью нового слова
+                setTimeout(type, 300);
+                return;
+            }
+        }
+        
+        // Скорость печати/стирания
+        const speed = isDeleting ? 150 : 100;
+        setTimeout(type, speed);
+    }
+    
+    // Начинаем анимацию
+    setTimeout(type, 500);
+</script>
+
+<script>
+    // ВАРИАНТ 1: Самый надежный (работает везде)
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) - 100
+    );
+}
+
+function checkBlocks() {
+    const blocks = document.querySelectorAll('.animate-block, .block, .cardRandom');
+    blocks.forEach(block => {
+        if (isElementInViewport(block)) {
+            block.classList.add('show', 'visible');
+        }
+    });
+}
+
+// Вешаем обработчики
+window.addEventListener('scroll', checkBlocks);
+window.addEventListener('load', checkBlocks);
+setTimeout(checkBlocks, 100); // На всякий случай через 100мс
+
+// ВАРИАНТ 2: Если нужен IntersectionObserver (современный)
+document.addEventListener('DOMContentLoaded', function() {
+    const blocks = document.querySelectorAll('.animate-block, .block, .hidden-block');
+    
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show', 'visible');
+                    observer.unobserve(entry.target); // Отключаем после первого срабатывания
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        blocks.forEach(block => observer.observe(block));
+    } else {
+        // Фолбэк для старых браузеров
+        window.addEventListener('scroll', checkBlocks);
+        checkBlocks();
+    }
+});
+</script>
+
+
+
+<script>
+let isOpen = false;
+
+function openContactSphere() {
+    if (isOpen) return;
+
+    const modal = document.getElementById('contactSphere');
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    isOpen = true;
+}
+
+function closeContactSphere() {
+    if (!isOpen) return;
+    const modal = document.getElementById('contactSphere');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+    isOpen = false;
+}
+
+
+document.getElementById('clClosee').addEventListener('click', function() { // Закрытие по крестику
+    closeContactSphere();
+});
+
+
+// Вешаем обработчики один раз
+document.addEventListener('DOMContentLoaded', function() {
+
+  document.querySelector('.connectTrigger').addEventListener('click', function(e) { // Открытие
+    e.preventDefault();
+    openContactSphere();
+  });
+
+
+  document.querySelector('.crystalOverlay').addEventListener('click', closeContactSphere); // Закрытие по клику на оверлей
+
+
+  document.querySelector('.aquaDialog').addEventListener('click', function(e) { // Не закрываем при клике на окно
+    e.stopPropagation();
+  });
+
+
+  document.addEventListener('keydown', function(e) { // Закрытие по Escape
+    if (e.key === 'Escape' && isOpen) {
+      closeContactSphere();
+    }
+  });
+
+  // Для ссылок
+  document.querySelectorAll('.rippleOption:not(.rippleDisabled)').forEach(link => {
+    link.addEventListener('click', function() {
+      if (this.href && !this.href.includes('#')) {
+        setTimeout(closeContactSphere, 100);
+      }
+    });
+  });
+});
+</script>
 
 </body>
 </html>
